@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+ 
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">    
+    <preference for="Magento\Checkout\Controller\Cart\Add" type="Elightwalk\Checkout\Controller\Cart\Add" />
+    <type name="Magento\Checkout\Controller\Onepage\Success">
+        <plugin name="ElightwalkOnepage\Success" type="Elightwalk\Checkout\Plugin\Controller\Onepage\Success" sortOrder="10" disabled="false"  />
+    </type>
+</config>
